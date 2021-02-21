@@ -8,4 +8,7 @@ npm i
 npm start
 
 # Build
-Npm start build
+Npm run build
+
+# Preview
+https://tigraranaar.github.io/renderforest/dist/

@@ -1,0 +1,61 @@
+header.header 
+  nav.header__nav
+    img.header__logo(src="./images/logo.png", alt="logo")
+
+    .header__button
+      span 
+
+    ul.menu__box
+      li.menu__item
+        a.menu__link(href="") Make Logo
+      li.menu__item
+        a.menu__link(href="") Create Video
+      li.menu__item
+        a.menu__link(href="") Edit Mockup
+      li.menu__item
+        a.menu__link(href="") Build Website
+      li.menu__item
+        a.menu__link(href="") Design Graphics       
+
+    ul.menu__sidebox
+      li.menu__item
+        a.menu__link(href="") Pricing
+      li.menu__item
+        a.menu__link(href="") Explore
+          span.menu__dnd.menu__dnd--exp        
+      li.menu__item
+        a.menu__link.menu__link--sign(href="") Sign In
+      li.menu__item
+        a.menu__link.menu__link--language(href="") EN 
+          span.menu__dnd.menu__dnd--lng        
+  
+  section.header__section.section
+    .section__wrapper.container 
+      .section__left
+        h1.section__title 
+          | Animated 
+          span educational video maker 
+          | for stellar videos
+        .section__buttons
+          button.button__start Start Creating
+          a(href="").button__watch 
+            include ../images/watch.svg
+            | Watch Tutorial
+      .section__right
+      .section__buttons.section__buttons--mobile
+        button.button__start Start Creating
+        a(href="").button__watch 
+          include ../images/watch.svg
+          | Watch Tutorial
+    section.header__slider.slider 
+      p.slider__text Used By 
+      section.slide-option
+        .infinite.highway-slider
+          .container.highway-barrier
+            ul.highway-lane
+              li.highway-car
+                span
+                  img(src="./images/company_slider.png", alt="")
+              li.highway-car 
+                span
+                  img(src="./images/company_slider.png", alt="")

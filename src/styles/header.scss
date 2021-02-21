@@ -1,0 +1,411 @@
+.header {
+  .header__nav {
+    display: flex;
+    align-items: center;
+    padding: 14px 30px 14px 30px;
+    font: normal normal 600 14px/18px Montserrat Regular;
+
+    @include xs {
+      justify-content: space-between;
+    }
+
+    @include sm {
+      justify-content: space-between;
+    }
+
+    @include md {
+      justify-content: space-between;
+    }
+
+    .header__logo {
+      margin-right: 60px;
+
+      @include xs {
+        content:url('../images/logo-mobile.png');
+      }
+
+      @include sm {
+        content:url('../images/logo-mobile.png');
+      }
+  
+      @include md {
+        content:url('../images/logo-mobile.png');
+      }
+    }
+
+    .header__button {
+      display: none;
+      position: relative;
+      width: 35px;
+
+      @include xs {
+          display: block; 
+      }
+
+      @include sm {
+        display: block; 
+      }
+  
+      @include md {
+        display: block; 
+      }
+      
+      span {
+        &::before {
+          display: block;
+          position: absolute;
+          width: 100%;
+          height: 2px;
+          background-color: #616161;
+          content: '';
+          top: -8px;
+        }
+
+        &::after {
+          display: block;
+          position: absolute;
+          width: 100%;
+          height: 2px;
+          background-color: #616161;
+          content: '';
+          top: 8px;
+        }
+      }
+    }
+
+    .menu__box {
+      display: flex;
+
+      @include xs {
+        display: none;
+      }
+
+      @include sm {
+        display: none; 
+      }
+  
+      @include md {
+        display: none; 
+      }
+
+      .menu__item {
+        list-style-type: none;
+
+        &:not(:last-child) {
+          margin-right: 30px;
+        }
+
+        .menu__link {
+          text-decoration: none;
+          color: #7683A8;
+        }
+      }
+    }
+
+    .menu__sidebox {
+      display: flex;
+      margin-left: auto;
+
+      @include xs {
+        display: none;
+      }
+
+      @include sm {
+        display: none; 
+      }
+  
+      @include md {
+        display: none; 
+      }
+
+      .menu__item {
+        list-style-type: none;
+
+        &:not(:last-child) {
+          margin-right: 30px;
+        }
+
+        .menu__link {
+          text-decoration: none;
+          color: #7683A8;
+        }
+
+        .menu__dnd {
+          margin-left: 1px;
+          margin-bottom: 1px;
+          border: solid #b8b4c4;
+          border-width: 0 3px 3px 0;
+          display: inline-block;
+          padding: 2px;
+          transform: rotate(45deg);
+        }
+
+        .menu__dnd--exp {
+          margin-left: 5px;
+        }
+
+        .menu__link--sign {
+          color: #387DFF;
+        }
+      }
+    }
+
+  }
+
+  .header__section{
+    background: url('../images/bg.png') 100% 100% no-repeat;
+    background-size: cover;
+    padding-top: 50px;
+
+    .section__wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      @include xs {
+        flex-wrap: wrap;
+      }
+
+      @include sm {
+        padding-top: 0;
+        flex-wrap: wrap;
+      }
+
+      @include md {
+        padding-top: 0;
+        flex-wrap: wrap;
+      }
+
+      .section__left {
+        flex: 0  0 50%;
+        padding-left: 35px;
+
+        @include xs {
+          flex: 0  0 100%;
+          padding-left: 0;
+        }
+
+        @include sm {
+          padding-left: 0;
+        }
+
+        @include md {
+          padding-left: 0;
+        }
+
+        .section__title {
+          width: 490px;
+          font: normal normal normal 56px/64px Montserrat Regular;
+          color: #FFFFFF;  
+
+          span {
+            font-family: Montserrat ExtraBold;
+            font-weight: 900;
+          }
+          
+          @include xs {
+            width: auto;
+            text-align: center;
+            font: normal normal normal 36px/42px Montserrat Regular;
+
+            span {
+              font-family: Montserrat ExtraBold;
+              font-weight: 900;
+            }
+          }
+
+          @include sm {
+            width: auto;
+            font: normal normal normal 32px/36px Montserrat Regular;
+
+            span {
+              font-family: Montserrat ExtraBold;
+              font-weight: 900;
+            }
+          }
+
+          @include md {
+            width: auto;
+            font: normal normal normal 48px/54px Montserrat Regular;
+            // font: normal normal normal 34px/38px Montserrat Regular;
+
+            span {
+              font-family: Montserrat ExtraBold;
+              font-weight: 900;
+            }
+          }
+        }        
+      }
+
+      .section__buttons {
+        display: flex;
+        margin-top: 50px;
+
+        @include xs {
+          display: none;
+          margin-top: 0;
+        }
+
+        @include sm {
+          display: none;
+          margin-top: 0;
+        }
+
+        @include md {
+          display: none;
+          margin-top: 0;
+        }
+
+        .button__start {
+          padding: 14px 29px;
+          margin-right: 45px;
+          text-transform: uppercase;
+          background: transparent linear-gradient(180deg, #FFFFFF 0%, #F5FAFE 100%) 0% 0% no-repeat padding-box;
+          box-shadow: 0px 3px 9px #0052E01A;
+          border: 1px solid #EEF5FF;
+          border-radius: 25px;
+          color: #545F7E;
+          font: normal normal 600 18px/22px Montserrat Regular;
+          
+          color: #545F7E;
+
+          @include xs {
+            margin-right: 0;
+            margin-bottom: 40px;
+          }
+
+          @include sm {
+            margin-right: 0;
+          }
+
+          @include md {
+            margin-right: 0;
+          }
+        }
+
+        .button__watch {
+          display: flex;
+          align-items: center;
+          text-decoration: none;
+          background: transparent;
+          font: normal normal 600 16px/19px Montserrat Regular;
+          color: #FFFFFF;
+
+          svg {
+            margin-right: 10px;
+          }
+        }
+      }
+
+      .section__buttons--mobile {
+        display: none;
+        
+        @include xs {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          align-items: center;
+        }
+
+        @include sm {
+          display: flex;
+          flex-wrap: wrap;
+          align-items: center;
+          flex: 0 0 100%;
+          justify-content: space-around;
+        }
+
+        @include md {
+          display: flex;
+          flex-wrap: wrap;
+          align-items: center;
+          flex: 0 0 100%;
+          justify-content: space-around;
+        }
+
+        .button__start {
+          @include xs {
+            margin-right: 0;
+            margin-bottom: 40px;
+          }
+
+          @include sm {
+            margin-right: 0;
+          }
+
+          @include md {
+            margin-right: 0;
+          }
+        }
+      }
+
+      .section__right {
+        flex: 0  0 50%;
+        background: url('../images/header_img_2.png'), url('../images/header_img_1.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        padding-bottom: 515px;
+        background-size: contain;
+
+        @include xs {
+          flex: 0  0 100%;
+        }
+
+        @include sm {
+          padding-bottom: 350px;
+        }
+      }
+    }
+
+    .header__slider {
+      padding-top: 35px;
+      padding-bottom: 10px;
+
+      .slider__text {
+        text-align: center;
+        font: normal normal 600 16px/19px Montserrat Regular;
+        color: #FFFFFF;
+      }
+  
+      .slide-option {
+        .infinite.highway-slider {
+          .highway-barrier {
+            width: 850px;
+            overflow: hidden;
+            position: relative;
+  
+            ul.highway-lane {
+              width: calc(900px * 2);
+              display: flex;
+              
+              li.highway-car {
+                width: 90px;
+                animation: translateinfinite 20s linear infinite;
+                flex: 1;
+                list-style-type: none;
+  
+                span {
+                  font-size: 65px;
+                  width: 100%;
+
+                  svg {
+                    width: 100%;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }    
+    } 
+  }
+
+}
+
+@keyframes translateinfinite {
+	100% {
+		transform: translateX(calc(-900px));
+	}
+}
+
+

@@ -1,0 +1,213 @@
+.join {
+    background-image: 
+        url('../images/join_1.png'), 
+        url('../images/join_2.png'),
+        url('../images/create_bg.png');
+    background-position: 
+        left top, 
+        right bottom,
+        center center;    
+    background-repeat: no-repeat;
+    background-size: auto, auto, cover;
+    padding: 60px 0;
+
+    @include xs {
+        background-image: url('../images/create_bg.png');
+        background-position: center center;    
+        background-repeat: no-repeat;
+        background-size:cover;
+        padding-top: 45px;
+    }
+
+    @include sm {
+        background-image: url('../images/create_bg.png');
+        background-position: center center;    
+        background-repeat: no-repeat;
+        background-size:cover;
+        padding-top: 45px;
+    }
+
+    .join__wrapper {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+
+        @include xs {
+            flex-wrap: wrap;
+        }
+
+        @include sm {
+            flex-wrap: wrap;
+        }
+
+        .join__titlebox {
+            .join__maintitle {
+                font: normal normal 600 36px/46px Montserrat Bold;
+                color: #FFFFFF; 
+
+                @include xs {
+                    font-size: 30px;
+                    line-height: 40px;
+                    text-align: center;
+                }
+
+                @include sm {
+                    font-size: 30px;
+                    line-height: 40px;
+                    text-align: center;
+                }
+            }
+
+            .join__subtitle {
+                padding-top: 15px;
+                font: normal normal 600 14px/24px Montserrat Regular;
+                color: #FFFFFF;
+
+                @include xs {
+                    font-size: 14px;
+                    line-height: 22px;
+                    text-align: center;
+                }
+
+                @include sm {
+                    font-size: 14px;
+                    line-height: 22px;
+                    text-align: center;
+                }
+            }
+        }
+    
+        .join__button {
+            padding: 14px 29px;
+            background: transparent linear-gradient(180deg, #FFFFFF 0%, #F5FAFE 100%) 0% 0% no-repeat padding-box;
+            box-shadow: 0px 3px 9px #0052E01A;
+            border: 1px solid #EEF5FF;
+            border-radius: 25px;
+            font: normal normal 600 18px/22px Montserrat Regular;
+            color: #545F7E;
+            text-transform: uppercase;       
+
+            @include xs {
+                margin-top: 30px;
+            }
+
+            @include sm {
+                margin-top: 30px;
+            }
+        }
+    }
+} 
+
+.tips {
+    background-image: 
+        url('../images/tips_bg1.png'), 
+        url('../images/tips_bg2.png');
+    background-position: left 80%, right 20%;
+    background-repeat: no-repeat;
+    background-size: auto, auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @include xs {
+        background: none;
+    }
+
+    @include sm {
+        background: none;
+    }
+
+    .tips__title {
+        width: 718px;
+        padding: 60px 0;
+        text-align: center;
+        font: normal normal 600 36px/48px Montserrat Bold;
+        letter-spacing: 0px;
+        color: #363F5A;
+
+        @include xs {
+            width: auto;
+            font-size: 23px;
+            line-height: 36px;
+        }
+
+        @include sm {
+            width: auto;
+            font-size: 23px;
+            line-height: 36px;
+        }
+    }
+
+    .tips__box {
+        width: 350px;
+        position: relative;
+        background: #FFFFFF 0% 0% no-repeat padding-box;
+        box-shadow: 0px 3px 6px #0047CE33;
+        border-radius: 10px;
+
+        .tips_1 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            transform: translate(-100%, 80%);
+
+            @include xs {
+                display: none;
+            }
+
+            @include sm {
+                display: none;
+            }
+        }
+
+        .tips_2 {
+            position: absolute;
+            top: 0;
+            right: 0;
+            transform: translate(100%, 40%) rotate(180deg);
+
+            @include xs {
+                display: none;
+            }
+            
+            @include sm {
+                display: none;
+            }
+        }
+        
+        .tips__images {
+            width: 100%;
+        }
+
+        .tips__paragrapg {
+            padding: 20px;
+            text-align: center;
+            font: normal normal bold 16px/24px Montserrat Bold;
+            color: #363F5A;
+        }
+    }
+
+    .tips__button {
+        margin-top: 90px;
+        margin-bottom: 75px;
+        background: transparent linear-gradient(180deg, #5690FF 0%, #387DFF 100%) 0% 0% no-repeat padding-box;
+        box-shadow: 0px 3px 9px #387DFF80;
+        border: 0;
+        border-radius: 25px;
+        font: normal normal 600 18px/22px Montserrat Regular;
+        letter-spacing: 0px;
+        color: #FFFFFF;
+        text-transform: uppercase;
+        padding: 14px 30px;
+
+        @include xs {
+            margin-top: 60px;
+        }
+
+        @include sm {
+            margin-top: 60px;
+        }
+    }
+} 

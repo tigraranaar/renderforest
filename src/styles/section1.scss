@@ -74,6 +74,11 @@ section.video {
                 align-items: center;
                 box-shadow: 0px 3px 9px #387DFF40;
 
+                &:hover {
+                    cursor: pointer;
+                    opacity: 0.7;
+                }
+
                 .arrow__up {
                     border: solid #508dff;
                     border-width: 0 3px 3px 0;
@@ -111,7 +116,6 @@ section.video {
                 margin-bottom: 45px;
                 background: #FFFFFF 0% 0% no-repeat padding-box;
                 box-shadow: 0px 3px 6px #0047CE33;
-
                 transition: 0.3s;
 
                 &:hover {
@@ -152,6 +156,7 @@ section.video {
                     font: normal normal bold 16px/35px Montserrat Bold;
                     color: #363F5A;
                 }
+                
                 .card__button {
                     margin: 20px 0;
                     position: relative;

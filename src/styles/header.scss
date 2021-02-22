@@ -149,7 +149,6 @@
         }
       }
     }
-
   }
 
   .header__section{
@@ -227,7 +226,6 @@
           @include md {
             width: auto;
             font: normal normal normal 48px/54px Montserrat Regular;
-            // font: normal normal normal 34px/38px Montserrat Regular;
 
             span {
               font-family: Montserrat ExtraBold;
@@ -266,7 +264,6 @@
           border-radius: 25px;
           color: #545F7E;
           font: normal normal 600 18px/22px Montserrat Regular;
-          
           color: #545F7E;
 
           @include xs {

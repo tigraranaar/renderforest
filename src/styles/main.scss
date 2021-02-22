@@ -44,7 +44,6 @@ html, body, ul, p, h1, h2, h3, h4, h5 {
 
   @include xs {
     max-width: 300px;
-    // min-width: 90%;
   }
 
   @include sm {
